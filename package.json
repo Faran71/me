@@ -1,7 +1,7 @@
 {
   "name": "website",
   "version": "0.1.0",
-  "homepage": "http://Faran71.github.io",
+  "homepage": "http://Faran71.github.io/me/",
   "private": false,
   "dependencies": {
     "-": "^0.0.1",
@@ -40,5 +40,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-router-dom": "^6.16.0"
   }
 }
