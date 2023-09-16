@@ -12,7 +12,7 @@ const MainContainer = () => {
 
     return(
         <div>
-            <BrowserRouter>
+            <BrowserRouter basename={process.env.PUBLIC_URL}>
                 <Routes>
                     <Route path="/" element={<LogInPage setSafeToEnter={setSafeToEnter}/>} key={1} />
                     <Route path="/MainPage" element={<MainPage safeToEnter={safeToEnter}/>} key={2} />
