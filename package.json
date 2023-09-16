@@ -2,7 +2,7 @@
   "name": "website",
   "version": "0.1.0",
   "homepage": "http://Faran71.github.io",
-  "private": true,
+  "private": false,
   "dependencies": {
     "-": "^0.0.1",
     "@testing-library/jest-dom": "^5.17.0",
