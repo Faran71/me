@@ -11,10 +11,10 @@ const MainPage = ({safeToEnter}) => {
         return(
             <div className="main-page">
                 <header>
-                    <button onClick={() => navigate("/Games")}>Games</button>
+                    <button onClick={() => navigate("/Jokes")}>Jokes</button>
                     <button onClick={() => navigate("/Fact")}>Fact</button>
                     <button onClick={() => navigate("/Quote")}>Quote</button>
-                    <button onClick={() => navigate("/Games")}>About Me</button>
+                    <button onClick={() => navigate("/AgeGuess")}>Age Guesser</button>
                 </header>
                 <h2>Main Page</h2>
             </div>
