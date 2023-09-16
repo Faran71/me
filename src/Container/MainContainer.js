@@ -5,6 +5,7 @@ import MainPage from "../Components/MainPage";
 import { useState } from "react";
 import Games from "../Components/Games";
 import Fact from "../Components/Fact";
+import Quote from "../Components/Quote";
 
 const MainContainer = () => {
 
@@ -18,6 +19,7 @@ const MainContainer = () => {
                     <Route path="/MainPage" element={<MainPage safeToEnter={safeToEnter}/>} key={2} />
                     <Route path="/Games" element={<Games safeToEnter={safeToEnter}/>} key={3} />
                     <Route path="/Fact" element={<Fact safeToEnter={safeToEnter}/>} key={4} />
+                    <Route path="/Quote" element={<Quote safeToEnter={safeToEnter}/>} key={5} />
                 </Routes>
             </BrowserRouter>
             

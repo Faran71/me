@@ -13,7 +13,7 @@ const MainPage = ({safeToEnter}) => {
                 <header>
                     <button onClick={() => navigate("/Games")}>Games</button>
                     <button onClick={() => navigate("/Fact")}>Fact</button>
-                    <button onClick={() => navigate("/Games")}>HELLO</button>
+                    <button onClick={() => navigate("/Quote")}>Quote</button>
                     <button onClick={() => navigate("/Games")}>About Me</button>
                 </header>
                 <h2>Main Page</h2>
