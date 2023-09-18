@@ -39,6 +39,8 @@
 /* Description */
 .description {
   height: 40vh;
+  text-align: center;
+  vertical-align: center;
 }
 
 /* Images */

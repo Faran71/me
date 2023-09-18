@@ -25,6 +25,9 @@ const MainPage = () => {
 
                 <div className="description">
                     <p>HEHE</p>
+                    <p>Click The Picture</p>
+                    <p>Try the toggle bar bottom right</p>
+                    
                 </div>
 
                 <div className="collection">
