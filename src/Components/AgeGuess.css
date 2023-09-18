@@ -1,13 +1,19 @@
+
 .age {
     text-align: center;
-    display: grid;
-    grid-template-rows: 1fr 2fr 1fr;
+    display: flex;
+    /* grid-template-rows: 1fr 2fr 1fr; */
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 2vw;
+    height: 100vh;
   }
   
   .age-return {
     padding-bottom: 10vh;
     text-align: center;
     height: 20vh;
+    font-size: 2vw;
   }
   
   
@@ -16,4 +22,14 @@
     width: 90%;
     height: 10vh;
     margin-bottom: -10%;
+    font-size: 2vw;
+  }
+
+  .submition {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 50vw;
+    height: 20vh;
+    padding-left: 25vw;
+    padding-top: 10vh;
   }

@@ -23,7 +23,9 @@ const MainPage = () => {
                     <button onClick={() => navigate("/AgeGuess")} className="btn">Age Guesser</button>
                 </header>
 
-                
+                <div className="description">
+                    <p>HEHE</p>
+                </div>
 
                 <div className="collection">
                     <div class="flip-card">

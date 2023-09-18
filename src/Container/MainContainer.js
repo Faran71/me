@@ -1,6 +1,6 @@
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route, ProtectedRoute } from "react-router-dom";
-import MainPage from "../Components/MainPage";
+import MainPage from "../Components/MainPage/MainPage";
 import { useState } from "react";
 import Jokes from "../Components/Jokes";
 import Fact from "../Components/Fact";

@@ -3,11 +3,10 @@
     height: 55vh;
     max-height: 60vh;
     margin-bottom: 20vh;
-    background-color: aqua;
   }
   
   .joke-box p {
-    font-size: 30px;
+    font-size: 2vw;
     height: 18vh;
     padding-top: 5vh;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;

@@ -3,11 +3,11 @@
     height: 50vh;
     max-height: 60vh;
     margin-bottom: 20vh;
-    background-color: aqua;
   }
   
   .fact-box p {
-    font-size: 40px;
+    /* font-size: 40px; */
+    font-size: 2vw;
     height: 30vh;
     /* margin-top: 20vh; */
     padding-top: 20vh;

@@ -28,7 +28,7 @@ const AgeGuess = () => {
 
         return(
             <div className="age">
-                <form onSubmit={handleFormSubmition}>
+                <form onSubmit={handleFormSubmition} className="submition">
                     <input
                         type="text"
                         name="name"
