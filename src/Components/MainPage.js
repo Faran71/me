@@ -1,11 +1,18 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./MainPage.css"
 import mountain_image from "./mountain_image.jpg"
+import SideBar from "./SideBar";
 
 const MainPage = () => {
     const navigate = useNavigate();
 
+    const [collapsed, setCollapsed] = useState(false);
+
+    const [sidebarOpen, setSideBarOpen] = useState(false);
+    const handleViewSidebar = () => {
+        setSideBarOpen(!sidebarOpen);
+    };
 
         return(
             <div className="main-page">
@@ -15,6 +22,9 @@ const MainPage = () => {
                     <button onClick={() => navigate("/Quote")} className="btn">Quote</button>
                     <button onClick={() => navigate("/AgeGuess")} className="btn">Age Guesser</button>
                 </header>
+
+                
+
                 <div className="collection">
                     <div class="flip-card">
                         <div class="flip-card-inner">
@@ -50,7 +60,11 @@ const MainPage = () => {
                         </div>
                     </div>
                 </div>
+
+                <SideBar isOpen={sidebarOpen} toggleSidebar={handleViewSidebar} />
             </div>
+
+            
         )
     
 

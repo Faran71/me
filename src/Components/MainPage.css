@@ -41,7 +41,7 @@
   .flip-card {
     background-color: transparent;
     width: 30vw;
-    height: 540px;
+    height: auto;
     /* border: 1px solid #f1f1f1; */
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
 
@@ -90,3 +90,39 @@
     transform: rotateY(180deg);
     vertical-align: bottom;
   }
+
+  /* sidebar */
+  .sidebar {
+    position: absolute;
+    top: 60px;
+    right: -20vw;
+    height: 100%;
+    width: 20vw;
+    transition: right 0.3s ease-in-out;
+    background-color: lightgray;
+  }
+  .sidebar-toggle {
+    position: absolute;
+    /* top: 80vh; */
+    bottom: 10vh;
+    left: -60px;
+    height: 60px;
+    width: 60px;
+    z-index: 1;
+  }
+  .content {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    height: 100%;
+    transition: left 0.3s ease-in-out;
+    background-color: lightgray;
+  }
+  .sidebar.open {
+    right: 0;
+  }
+  .content.open {
+    right: 20vw;
+  }
+  
