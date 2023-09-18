@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "../App.css"
+import "./Jokes.css"
 
-const Jokes = ({safeToEnter}) => {
+const Jokes = () => {
 
     const navigate = useNavigate();
 
@@ -19,7 +19,6 @@ const Jokes = ({safeToEnter}) => {
         fetchJoke();
     },[])
 
-    if(safeToEnter){
         return(
             <div className="joke">
                 <div className="joke-box">
@@ -29,21 +28,12 @@ const Jokes = ({safeToEnter}) => {
                     <button onClick={() => {fetchJoke();setIsHidden(true)}}>Click for more</button>
                 </div>
                 <div className="joke-return">
-                    <button onClick={() => navigate("/MainPage")}>Return to Main Page</button>
+                    <button onClick={() => navigate("/")}>Return to Main Page</button>
                 </div>
                 
             </div>
         )
-    } else {
-        return(
-            <div className="back-to-log-in">
-                <p>Please Log In</p>
-                <button onClick={() => navigate("/")}>Click Me To Log In</button>
-                
-            </div>
-        )
-    }
+} 
 
-}
 
 export default Jokes;

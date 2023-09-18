@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "../App.css"
+import "./Quote.css"
 
-const Quote = ({safeToEnter}) => {
+const Quote = () => {
 
     const navigate = useNavigate();
 
@@ -18,7 +18,7 @@ const Quote = ({safeToEnter}) => {
         fetchQuote();
     },[])
 
-    if(safeToEnter){
+
         return(
             <div className="quote">
                 <div className="quote-box">
@@ -27,21 +27,11 @@ const Quote = ({safeToEnter}) => {
                     <button onClick={() => fetchQuote()}>Click for more</button>
                 </div>
                 <div className="quote-return">
-                    <button onClick={() => navigate("/MainPage")}>Return to Main Page</button>
+                    <button onClick={() => navigate("/")}>Return to Main Page</button>
                 </div>
                 
             </div>
         )
-    } else {
-        return(
-            <div className="back-to-log-in">
-                <p>Please Log In</p>
-                <button onClick={() => navigate("/")}>Click Me To Log In</button>
-                
-            </div>
-        )
-    }
-
 }
 
 export default Quote;

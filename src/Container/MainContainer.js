@@ -1,6 +1,5 @@
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route, ProtectedRoute } from "react-router-dom";
-import LogInPage from "../Components/LogInPage";
 import MainPage from "../Components/MainPage";
 import { useState } from "react";
 import Jokes from "../Components/Jokes";
@@ -10,18 +9,18 @@ import AgeGuess from "../Components/AgeGuess";
 
 const MainContainer = () => {
 
-    const [safeToEnter, setSafeToEnter] = useState(false);
+    // const [safeToEnter, setSafeToEnter] = useState(false);
 
     return(
         <div>
             <BrowserRouter basename={process.env.PUBLIC_URL}>
                 <Routes>
-                    <Route path="/" element={<LogInPage setSafeToEnter={setSafeToEnter}/>} key={1} />
-                    <Route path="/MainPage" element={<MainPage safeToEnter={safeToEnter}/>} key={2} />
-                    <Route path="/Jokes" element={<Jokes safeToEnter={safeToEnter}/>} key={3} />
-                    <Route path="/Fact" element={<Fact safeToEnter={safeToEnter}/>} key={4} />
-                    <Route path="/Quote" element={<Quote safeToEnter={safeToEnter}/>} key={5} />
-                    <Route path="/AgeGuess" element={<AgeGuess safeToEnter={safeToEnter}/>} key={6} />
+                    {/* <Route path="/" element={<LogInPage setSafeToEnter={setSafeToEnter}/>} key={1} /> */}
+                    <Route path="/" element={<MainPage />} key={1} />
+                    <Route path="/Jokes" element={<Jokes />} key={1} />
+                    <Route path="/Fact" element={<Fact />} key={2} />
+                    <Route path="/Quote" element={<Quote />} key={4} />
+                    <Route path="/AgeGuess" element={<AgeGuess />} key={5} />
                 </Routes>
             </BrowserRouter>
             

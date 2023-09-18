@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "../App.css"
+import "./Fact.css"
 
-const Fact = ({safeToEnter}) => {
+const Fact = () => {
 
     const navigate = useNavigate();
 
@@ -18,7 +18,6 @@ const Fact = ({safeToEnter}) => {
         fetchFact();
     },[])
 
-    if(safeToEnter){
         return(
             <div className="fact">
                 <div className="fact-box">
@@ -26,20 +25,11 @@ const Fact = ({safeToEnter}) => {
                     <button onClick={() => fetchFact()}>Click for more</button>
                 </div>
                 <div className="fact-return">
-                    <button onClick={() => navigate("/MainPage")}>Return to Main Page</button>
+                    <button onClick={() => navigate("/")}>Return to Main Page</button>
                 </div>
                 
             </div>
         )
-    } else {
-        return(
-            <div className="back-to-log-in">
-                <p>Please Log In</p>
-                <button onClick={() => navigate("/")}>Click Me To Log In</button>
-                
-            </div>
-        )
-    }
 
 }
 

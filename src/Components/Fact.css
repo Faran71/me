@@ -1,0 +1,33 @@
+.fact-box {
+    text-align: center;
+    height: 50vh;
+    max-height: 60vh;
+    margin-bottom: 20vh;
+    background-color: aqua;
+  }
+  
+  .fact-box p {
+    font-size: 40px;
+    height: 30vh;
+    /* margin-top: 20vh; */
+    padding-top: 20vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .fact-box button {
+    border-radius: 30px;
+    width: 90%;
+    height: 10vh;
+    /* margin-top: 10vh; */
+  }
+  
+  .fact-return {
+    text-align: center;
+  }
+  
+  .fact-return button {
+    border-radius: 30px;
+    width: 90%;
+    height: 10vh;
+    margin-bottom: 0;
+  }

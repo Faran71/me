@@ -1,0 +1,39 @@
+.joke-box {
+    text-align: center;
+    height: 55vh;
+    max-height: 60vh;
+    margin-bottom: 20vh;
+    background-color: aqua;
+  }
+  
+  .joke-box p {
+    font-size: 30px;
+    height: 18vh;
+    padding-top: 5vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  
+  .joke-box button {
+    border-radius: 30px;
+    width: 90%;
+    height: 10vh;
+    /* margin-top: 10vh; */
+  }
+  
+  .joke-return {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    text-align: center;
+  }
+  
+  .joke-return button {
+    border-radius: 30px;
+    width: 90%;
+    height: 10vh;
+  }
+  .joke-return button:hover {
+    background-color: aquamarine;
+  }

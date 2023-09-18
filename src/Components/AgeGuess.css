@@ -1,0 +1,19 @@
+.age {
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+  }
+  
+  .age-return {
+    padding-bottom: 10vh;
+    text-align: center;
+    height: 20vh;
+  }
+  
+  
+  .age-return button {
+    border-radius: 30px;
+    width: 90%;
+    height: 10vh;
+    margin-bottom: -10%;
+  }

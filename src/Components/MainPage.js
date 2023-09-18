@@ -1,13 +1,11 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import "../App.css"
+import "./MainPage.css"
 
-const MainPage = ({safeToEnter}) => {
+const MainPage = () => {
     const navigate = useNavigate();
 
 
-
-    if(safeToEnter){
         return(
             <div className="main-page">
                 <header>
@@ -19,15 +17,6 @@ const MainPage = ({safeToEnter}) => {
                 <h2>Main Page</h2>
             </div>
         )
-    } else {
-        return(
-            <div className="back-to-log-in">
-                <p>Please Log In</p>
-                <button onClick={() => navigate("/")}>Click Me To Log In</button>
-                
-            </div>
-        )
-    }
     
 
 }
